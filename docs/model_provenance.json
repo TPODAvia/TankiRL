@@ -1,0 +1,8 @@
+{
+  "repo_id": "guaguaa/open-p2p",
+  "revision": "de18b62bc8f9722bda64497600c38c8f7634d86b",
+  "file": "150M/checkpoint-step=00500000.ckpt",
+  "bytes": 2198488343,
+  "sha256": "2a3b43121144ca2d9c2b8aa605e313184c98ac5ef6d2c3b530c2d353d886c5bc",
+  "verified_against_huggingface_etag": true
+}

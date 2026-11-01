@@ -1,0 +1,320 @@
+{
+  "game": {
+    "checks": {
+      "rendered_rgb": true,
+      "enemy_exists": true,
+      "player_moves": true,
+      "enemy_moves": true,
+      "independent_turret": true,
+      "emergency_release": true,
+      "pause_releases": true,
+      "resume": true,
+      "watchdog_releases": true,
+      "actual_shots": true,
+      "actual_damage": true,
+      "fixture_kill": true,
+      "damage_reward": true,
+      "reset_clears_events": true,
+      "no_browser_errors": true
+    },
+    "fixture_telemetry": {
+      "damage_dealt": 268,
+      "damage_received": 0,
+      "kills": 1,
+      "deaths": 0,
+      "shots": 11,
+      "hits": 11,
+      "aim_alignment": null,
+      "time_ms": 18810,
+      "phase": "playing",
+      "paused": false,
+      "stopped": false,
+      "keys": [
+        "Space"
+      ],
+      "actors": [
+        {
+          "id": "player",
+          "local": true,
+          "alive": true,
+          "health": 144,
+          "max_health": 144,
+          "position": {
+            "x": 158.224,
+            "y": 2859.223,
+            "z": 100
+          },
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "turret": 0
+        },
+        {
+          "id": "bot1",
+          "local": false,
+          "alive": false,
+          "health": 0,
+          "max_health": 268,
+          "position": {
+            "x": 158.224,
+            "y": 3459.223,
+            "z": 100
+          },
+          "orientation": {
+            "w": 6.123233995736766e-17,
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "turret": 0
+        }
+      ]
+    },
+    "timing": {
+      "capture_ms": 294.25305500626564,
+      "action_ms": 6.510679959319532,
+      "step_ms": 137.16195605229586
+    },
+    "combat_success_scope": "Aligned stationary curriculum fixture; not learned pursuit or aiming",
+    "browser_errors": []
+  },
+  "p2p_combat": {
+    "mode": "p2p",
+    "steps": 111,
+    "wall_seconds": 53.33625014999416,
+    "telemetry": {
+      "damage_dealt": 0,
+      "damage_received": 144,
+      "kills": 0,
+      "deaths": 1,
+      "shots": 1,
+      "hits": 0,
+      "time_ms": 10989,
+      "phase": "playing",
+      "paused": false,
+      "stopped": false,
+      "keys": [],
+      "actors": [
+        {
+          "id": "player",
+          "local": true,
+          "alive": false,
+          "health": 0,
+          "max_health": 144,
+          "position": {
+            "x": -496.9811605743759,
+            "y": -2044.3861779081176,
+            "z": 88.32144950700913
+          },
+          "orientation": {
+            "w": 0.9939878177698441,
+            "x": -0.01763917251995706,
+            "y": 0.001917394287499748,
+            "z": -0.1080435158494052
+          },
+          "turret": -0.19623780000000002
+        },
+        {
+          "id": "bot1",
+          "local": false,
+          "alive": true,
+          "health": 232.27376054351996,
+          "max_health": 268,
+          "position": {
+            "x": -826.5900932959885,
+            "y": -904.9592338932747,
+            "z": 96.63122566950703
+          },
+          "orientation": {
+            "w": 0.13634290913373906,
+            "x": 0.00024537193809861786,
+            "y": -0.013671954440640831,
+            "z": -0.9905673266281975
+          },
+          "turret": -0.1517322931192303
+        }
+      ]
+    },
+    "browser_errors": [],
+    "timing_mean_ms": {
+      "inference_ms": 250.47825332542226,
+      "capture_ms": 145.40343293458693,
+      "action_ms": 16.25839565033177,
+      "step_ms": 179.67036205369072
+    },
+    "steps_per_second": 2.0811361820120786,
+    "action_counts": {
+      "[1, 1, 1, 0]": 89,
+      "[1, 1, 2, 0]": 4,
+      "[1, 1, 0, 0]": 10,
+      "[1, 1, 1, 1]": 5,
+      "[2, 1, 2, 0]": 1,
+      "[2, 1, 1, 0]": 1,
+      "[1, 1, 2, 1]": 1
+    },
+    "vram_bytes": 587876864,
+    "last_raw_prediction": {
+      "keys": [],
+      "mouse_buttons": [],
+      "mouse_delta_x": 1,
+      "mouse_delta_y": 0
+    }
+  },
+  "ppo_smoke": {
+    "timesteps": 64,
+    "wall_seconds": 13.690250209067017,
+    "requested_steps": 64,
+    "game": {
+      "url": "http://127.0.0.1:5173",
+      "map": "arena_old_summer",
+      "hull": "Hunter",
+      "turret": "Smoky",
+      "enemies": 1,
+      "difficulty": "easy",
+      "width": 640,
+      "height": 480,
+      "image_size": 84,
+      "frame_stack": 4,
+      "decision_hz": 10,
+      "headless": true,
+      "stepped": true,
+      "seed": 1,
+      "episode_seconds": 3,
+      "stage": 4,
+      "capture_backend": "canvas"
+    },
+    "rl": {
+      "timesteps": 64,
+      "n_envs": 1,
+      "n_steps": 32,
+      "batch_size": 16,
+      "n_epochs": 1,
+      "learning_rate": 0.0003,
+      "device": "cpu",
+      "seed": 1,
+      "validation_seed": 10001,
+      "checkpoint_freq": 10000
+    },
+    "cuda_peak_bytes": 0,
+    "steps_per_second": 4.674859774119612
+  },
+  "ppo_resume": {
+    "timesteps": 128,
+    "wall_seconds": 26.036124031990767,
+    "requested_steps": 64,
+    "game": {
+      "url": "http://127.0.0.1:5173",
+      "map": "arena_old_summer",
+      "hull": "Hunter",
+      "turret": "Smoky",
+      "enemies": 1,
+      "difficulty": "easy",
+      "width": 640,
+      "height": 480,
+      "image_size": 84,
+      "frame_stack": 4,
+      "decision_hz": 10,
+      "headless": true,
+      "stepped": true,
+      "seed": 1,
+      "episode_seconds": 3,
+      "stage": 4,
+      "capture_backend": "canvas"
+    },
+    "rl": {
+      "timesteps": 64,
+      "n_envs": 1,
+      "n_steps": 32,
+      "batch_size": 16,
+      "n_epochs": 1,
+      "learning_rate": 0.0003,
+      "device": "cpu",
+      "seed": 1,
+      "validation_seed": 10001,
+      "checkpoint_freq": 10000
+    },
+    "cuda_peak_bytes": 0,
+    "steps_per_second": 2.4581231799849608
+  },
+  "ppo_parallel": {
+    "timesteps": 64,
+    "wall_seconds": 24.832952308934182,
+    "requested_steps": 64,
+    "game": {
+      "url": "http://127.0.0.1:5173",
+      "map": "arena_old_summer",
+      "hull": "Hunter",
+      "turret": "Smoky",
+      "enemies": 1,
+      "difficulty": "easy",
+      "width": 640,
+      "height": 480,
+      "image_size": 84,
+      "frame_stack": 4,
+      "decision_hz": 10,
+      "headless": true,
+      "stepped": true,
+      "seed": 1,
+      "episode_seconds": 3,
+      "stage": 1,
+      "capture_backend": "canvas"
+    },
+    "rl": {
+      "timesteps": 64,
+      "n_envs": 2,
+      "n_steps": 32,
+      "batch_size": 16,
+      "n_epochs": 1,
+      "learning_rate": 0.0003,
+      "device": "cpu",
+      "seed": 1,
+      "validation_seed": 10001,
+      "checkpoint_freq": 10000
+    },
+    "cuda_peak_bytes": 0,
+    "steps_per_second": 2.57722075103308
+  },
+  "evaluation": {
+    "checkpoint": "checkpoints/smoke_canvas.zip",
+    "episodes": [
+      {
+        "seed": 10001,
+        "reward": -0.006138000000000001,
+        "steps": 31,
+        "hits": 0,
+        "kills": 0,
+        "deaths": 0,
+        "damage_dealt": 0,
+        "damage_received": 0,
+        "shots": 2
+      },
+      {
+        "seed": 10002,
+        "reward": -0.006138000000000001,
+        "steps": 31,
+        "hits": 0,
+        "kills": 0,
+        "deaths": 0,
+        "damage_dealt": 0,
+        "damage_received": 0,
+        "shots": 2
+      }
+    ],
+    "mean_reward": -0.006138000000000001
+  },
+  "legacy_python": {
+    "python_files_parsed": 425,
+    "syntax_errors": [],
+    "numpy": "2.4.4",
+    "mysql_connector": "9.6.0",
+    "panda3d": "1.10.16",
+    "server_started": false
+  },
+  "test_suite": "11 passed in 22.11s",
+  "typescript": "tsc --noEmit passed",
+  "behavior_clone": "1 epoch on 16 scripted-recording transitions; negative log likelihood 3.9936258792877197; not human demonstrations",
+  "scope": "Fixture kill verified. No autonomous P2P or PPO enemy hit or kill demonstrated."
+}

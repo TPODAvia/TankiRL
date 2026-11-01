@@ -1,0 +1,17 @@
+url: http://127.0.0.1:5173
+map: arena_old_summer
+hull: Hunter
+turret: Smoky
+enemies: 1
+difficulty: easy
+width: 640
+height: 480
+image_size: 84
+frame_stack: 4
+decision_hz: 10
+headless: true
+stepped: true
+seed: 1
+episode_seconds: 60
+stage: 4
+capture_backend: canvas

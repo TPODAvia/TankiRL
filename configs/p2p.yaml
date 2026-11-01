@@ -1,0 +1,7 @@
+size: 150M
+checkpoint: checkpoints/150M/checkpoint-step=00500000.ckpt
+config: third_party/open_p2p/config/policy_model/150M.yaml
+device: cuda
+mouse_dead_zone: 2.0
+mouse_sensitivity: 0.01
+max_turret_seconds: 0.1
