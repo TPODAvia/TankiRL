@@ -1,0 +1,12 @@
+[submodule "third_party/skilltanki"]
+	path = third_party/skilltanki
+	url = https://github.com/skilltanki/game
+[submodule "third_party/tanki_2014"]
+	path = third_party/tanki_2014
+	url = https://github.com/juhe1/tanki_2014_server_public
+[submodule "third_party/open_p2p"]
+	path = third_party/open_p2p
+	url = https://github.com/elefant-ai/open-p2p
+[submodule "third_party/recap"]
+	path = third_party/recap
+	url = https://github.com/elefant-ai/recap
